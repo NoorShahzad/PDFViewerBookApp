@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context=".Booklist">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:background="#F86232"
+        android:fontFamily="@font/rouge_script"
+        android:gravity="center"
+        android:text="Books"
+        android:textColor="#FFFBFB"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15sp"
+                app:columnCount="2">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv1"
+                    android:layout_width="140sp"
+                    android:layout_height="180sp"
+                    android:layout_margin="10sp"
+                    android:padding="5sp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp"
+                        android:paddingLeft="10sp"
+                        android:paddingRight="10sp">
+
+                        <ImageView
+                            android:id="@+id/book1img"
+                            android:layout_width="match_parent"
+                            android:layout_height="140sp"
+                            app:srcCompat="@drawable/colorspic" />
+
+                        <TextView
+                            android:id="@+id/book1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Colors"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv2"
+                    android:layout_width="140sp"
+                    android:layout_height="180sp"
+                    android:layout_margin="10sp"
+                    android:padding="5sp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp"
+                        android:paddingLeft="10sp"
+                        android:paddingRight="10sp">
+
+                        <ImageView
+                            android:id="@+id/book2img"
+                            android:layout_width="match_parent"
+                            android:layout_height="140sp"
+                            app:srcCompat="@drawable/coutingpic" />
+
+                        <TextView
+                            android:id="@+id/book2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Counting"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv3"
+                    android:layout_width="140sp"
+                    android:layout_height="180sp"
+                    android:layout_margin="10sp"
+                    android:padding="5sp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp"
+                        android:paddingLeft="10sp"
+                        android:paddingRight="10sp">
+
+                        <ImageView
+                            android:id="@+id/book3img"
+                            android:layout_width="match_parent"
+                            android:layout_height="140sp"
+                            app:srcCompat="@drawable/daysofweekpic" />
+
+                        <TextView
+                            android:id="@+id/book3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Days Of Week"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv4"
+                    android:layout_width="140sp"
+                    android:layout_height="180sp"
+                    android:layout_margin="10sp"
+                    android:padding="5sp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp"
+                        android:paddingLeft="10sp"
+                        android:paddingRight="10sp">
+
+                        <ImageView
+                            android:id="@+id/book4img"
+                            android:layout_width="match_parent"
+                            android:layout_height="140sp"
+                            app:srcCompat="@drawable/partsofbodypic" />
+
+                        <TextView
+                            android:id="@+id/book4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Parts Of Body"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv5"
+                    android:layout_width="140sp"
+                    android:layout_height="180sp"
+                    android:layout_margin="10sp"
+                    android:padding="5sp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp"
+                        android:paddingLeft="10sp"
+                        android:paddingRight="10sp">
+
+                        <ImageView
+                            android:id="@+id/book5img"
+                            android:layout_width="match_parent"
+                            android:layout_height="140sp"
+                            app:srcCompat="@drawable/seasonspic2" />
+
+                        <TextView
+                            android:id="@+id/book5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Seasons"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv6"
+                    android:layout_width="140sp"
+                    android:layout_height="180sp"
+                    android:layout_margin="10sp"
+                    android:padding="5sp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp"
+                        android:paddingLeft="10sp"
+                        android:paddingRight="10sp">
+
+                        <ImageView
+                            android:id="@+id/book6img"
+                            android:layout_width="match_parent"
+                            android:layout_height="140sp"
+                            app:srcCompat="@drawable/shapespic" />
+
+                        <TextView
+                            android:id="@+id/book6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Shapes"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv7"
+                    android:layout_width="140sp"
+                    android:layout_height="180sp"
+                    android:layout_margin="10sp"
+                    android:padding="5sp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp"
+                        android:paddingLeft="10sp"
+                        android:paddingRight="10sp">
+
+                        <ImageView
+                            android:id="@+id/book7img"
+                            android:layout_width="match_parent"
+                            android:layout_height="140sp"
+                            app:srcCompat="@drawable/weatherpic" />
+
+                        <TextView
+                            android:id="@+id/book7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Weathers"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv8"
+                    android:layout_width="140sp"
+                    android:layout_height="180sp"
+                    android:layout_margin="10sp"
+                    android:padding="5sp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp"
+                        android:paddingLeft="10sp"
+                        android:paddingRight="10sp">
+
+                        <ImageView
+                            android:id="@+id/book8img"
+                            android:layout_width="match_parent"
+                            android:layout_height="140sp"
+                            app:srcCompat="@drawable/animalspic" />
+
+                        <TextView
+                            android:id="@+id/book8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Animals"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.gridlayout.widget.GridLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
